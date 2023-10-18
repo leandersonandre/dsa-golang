@@ -1,10 +1,10 @@
 # dsa-golang
 Data Structures and Algorithms in Go
 
-Array List
+## Array List
 
-Linked List
+## Linked List
 
-Stack
+## Stack
 
-Queue
+## Queue
