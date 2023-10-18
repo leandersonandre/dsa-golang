@@ -2,6 +2,7 @@
 Data Structures and Algorithms in Go
 
 ## Array List
+
 | **Method** | **Complexity** |
 |------------|----------------|
 | get(i)     | O(1)           |
