@@ -97,7 +97,7 @@ Queue use FIFO (first-in first-out) ordering.
 | Size() : int | O(1)           |
 | IsEmpty() : bool  | O(1)           |
 
-Deque is a queue which elements can be added to or removed from either the front (head) or back (tail).
+Deque is a queue which elements can be added to or removed from either the front (head) or back (tail). This structure is a implementation of a head-tail doubly linkedlist.
 
 
 | **Method** | **Complexity** |
