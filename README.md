@@ -56,7 +56,8 @@ go test ./...
 
 ## Linked List
 
-### Singly Linked List
+**Singly Linked List** is a list of nodes where each node contains some data and a reference to the next node in the sequence.
+
 | **Method** | **Complexity** |
 |------------|----------------|
 | AddFirst(value)     | O(1)           |
@@ -74,7 +75,7 @@ go test ./...
 
 ## Stack
 
-Stack use LIFO (last-in first-out) ordering.
+**Stack** use LIFO (last-in first-out) ordering.
 
 | **Method** | **Complexity** |
 |------------|----------------|
@@ -87,7 +88,7 @@ Stack use LIFO (last-in first-out) ordering.
 ## Queue
 
 
-Queue use FIFO (first-in first-out) ordering.
+**Queue** use FIFO (first-in first-out) ordering.
 
 | **Method** | **Complexity** |
 |------------|----------------|
@@ -97,7 +98,7 @@ Queue use FIFO (first-in first-out) ordering.
 | Size() : int | O(1)           |
 | IsEmpty() : bool  | O(1)           |
 
-Deque is a queue which elements can be added to or removed from either the front (head) or back (tail). This structure is a implementation of a head-tail doubly linkedlist.
+**Deque** is a queue which elements can be added to or removed from either the front (head) or back (tail). This structure is a implementation of a head-tail doubly linkedlist.
 
 
 | **Method** | **Complexity** |
