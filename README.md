@@ -6,8 +6,11 @@ Data Structures and Algorithms in Go
 1. ArrayList
 
 2. LinkedList
+
 -[x] Singly LinkedList
+
 -[ ] Doubly LinkedList
+
 -[ ] Circular LinkedList
 
 3. Stack
