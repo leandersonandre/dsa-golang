@@ -4,7 +4,7 @@ Data Structures and Algorithms in Go
 ```
 go run .
 go test ./...
-``
+```
 
 ## Array List
 
