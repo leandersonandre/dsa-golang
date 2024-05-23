@@ -20,6 +20,10 @@ Data Structures and Algorithms in Go
 - [ ] ArrayStack implementation
 
 3. Queue
+
+
+- [x] Node Queue implementation
+
 3. Map
 
 `
