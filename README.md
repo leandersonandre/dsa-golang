@@ -1,5 +1,10 @@
 # dsa-golang
 Data Structures and Algorithms in Go
+`
+```
+go run .
+go test ./...
+``
 
 ## Array List
 
@@ -13,6 +18,22 @@ Data Structures and Algorithms in Go
 | isEmpty()  | O(1)           |
 
 ## Linked List
+
+### Singly Linked List
+| **Method** | **Complexity** |
+|------------|----------------|
+| AddFirst(value)     | O(1)           |
+| AddLast(value)   | O(n)           |
+| Add(index,value)   | O(n)           |
+| RemoveFirst() : int | O(1)           |
+| RemoveLast() : int    | O(n)           |
+| Remove(index) : int | O(n)           |
+| GetFirst() : int | O(1)           |
+| GetLast() : int | O(n)           |
+| Get(index) : int | O(n)           |
+| PrintList()  | O(n)           |
+| Length() : int | O(n)           |
+| IsEmpty() : bool  | O(n)           |
 
 ## Stack
 
