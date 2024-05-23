@@ -1,5 +1,19 @@
 # dsa-golang
 Data Structures and Algorithms in Go
+
+## Content
+
+1. ArrayList
+
+2. LinkedList
+-[x] Singly LinkedList
+-[ ] Doubly LinkedList
+-[ ] Circular LinkedList
+
+3. Stack
+3. Queue
+3. Map
+
 `
 ```
 go run .
