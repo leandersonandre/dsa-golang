@@ -7,11 +7,11 @@ Data Structures and Algorithms in Go
 
 2. LinkedList
 
--[x] Singly LinkedList
+- [x] Singly LinkedList
 
--[ ] Doubly LinkedList
+- [ ] Doubly LinkedList
 
--[ ] Circular LinkedList
+- [ ] Circular LinkedList
 
 3. Stack
 3. Queue
