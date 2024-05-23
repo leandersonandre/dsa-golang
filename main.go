@@ -13,6 +13,6 @@ func main() {
 	l.AddFirst(2)
 	l.AddFirst(3)
 	l.AddLast(9)
-	fmt.Println(l.Length())
+	fmt.Println(l.Size())
 	l.PrintList()
 }

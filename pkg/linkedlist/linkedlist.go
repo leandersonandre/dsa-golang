@@ -10,7 +10,7 @@ type Node struct{
 
 type LinkedList struct{
 	head *Node
-	length int
+	size int
 }
 
 func New() *LinkedList{
@@ -18,11 +18,11 @@ func New() *LinkedList{
 	return &l
 }
 
-func (l *LinkedList) Length() int{
-	return l.length
+func (l *LinkedList) Size() int{
+	return l.size
 }
 func (l *LinkedList) IsEmpty() bool{
-	return l.length == 0
+	return l.size == 0
 }
 
 func (l *LinkedList) PrintList(){
@@ -41,7 +41,7 @@ func (l *LinkedList) PrintList(){
 func (l *LinkedList) AddFirst(value int){
 	newNode := Node{value,l.head}
 	l.head = &newNode
-	l.length++
+	l.size++
 }
 
 
@@ -56,19 +56,19 @@ func (l *LinkedList) AddLast(value int){
 	}
 	newNode := Node{value,nil}
 	curr.next = &newNode
-	l.length++
+	l.size++
 }
 
 
 func (l *LinkedList) Add(index int, value int) error {
-	if l.Length() < index {
-		return  fmt.Errorf("LinkedList: index out of range: {%d}",l.Length())
+	if l.Size() < index {
+		return  fmt.Errorf("LinkedList: index out of range: {%d}",l.Size())
 	}
 	if l.IsEmpty() {
 		l.AddFirst(value)
 		return nil
 	}
-	if l.Length() == index {
+	if l.Size() == index {
 		l.AddLast(value)
 		return nil
 	}
@@ -81,7 +81,7 @@ func (l *LinkedList) Add(index int, value int) error {
 	}
 	newNode := Node{value,curr}
 	beforeLast.next = &newNode
-	l.length++
+	l.size++
 	return nil
 }
 
@@ -108,8 +108,8 @@ func (l *LinkedList) Get(index int) (int, error, ) {
 	if l.IsEmpty() {
 		return  0, fmt.Errorf("LinkedList is empty")
 	}
-	if l.Length() < index {
-		return  0, fmt.Errorf("LinkedList: index out of range: {%d}",l.Length())
+	if l.Size() < index {
+		return  0, fmt.Errorf("LinkedList: index out of range: {%d}",l.Size())
 	}
     count := 0
 	curr := l.head
@@ -125,7 +125,7 @@ func (l *LinkedList) RemoveFirst() (int, error) {
 	if l.IsEmpty() {
 		return  0, fmt.Errorf("LinkedList is empty")
 	}
-	l.length--
+	l.size--
 	old := l.head
 	l.head = l.head.next
 	old.next = nil
@@ -137,10 +137,10 @@ func (l *LinkedList) RemoveLast() (int, error) {
 	if l.IsEmpty() {
 		return  0, fmt.Errorf("LinkedList is empty")
 	}
-	if l.Length() == 1 {
+	if l.Size() == 1 {
 		return l.RemoveFirst()
 	}
-	l.length--
+	l.size--
 	curr := l.head.next
 	beforeLast := l.head
 	for curr.next != nil {
@@ -157,13 +157,13 @@ func (l *LinkedList) Remove(index int) (int, error) {
 	if l.IsEmpty() {
 		return  0, fmt.Errorf("LinkedList is empty")
 	}
-	if l.Length() < index {
-		return  0, fmt.Errorf("LinkedList: index out of range: {%d}",l.Length())
+	if l.Size() < index {
+		return  0, fmt.Errorf("LinkedList: index out of range: {%d}",l.Size())
 	}
-	if l.Length() == 1 {
+	if l.Size() == 1 {
 		return l.RemoveFirst()
 	}
-	l.length--
+	l.size--
 	curr := l.head.next
 	beforeLast := l.head
 	count := 1

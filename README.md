@@ -49,9 +49,17 @@ go test ./...
 | GetLast() : int | O(n)           |
 | Get(index) : int | O(n)           |
 | PrintList()  | O(n)           |
-| Length() : int | O(n)           |
-| IsEmpty() : bool  | O(n)           |
+| Length() : int | O(1)           |
+| IsEmpty() : bool  | O(1)           |
 
 ## Stack
+
+| **Method** | **Complexity** |
+|------------|----------------|
+| Push(value)     | O(1)           |
+| Peek() int   | O(1)           |
+| Pop() int   | O(1)           |
+| Size() : int | O(1)           |
+| IsEmpty() : bool  | O(1)           |
 
 ## Queue

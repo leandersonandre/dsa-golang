@@ -101,7 +101,7 @@ func TestRemoveFirst(t *testing.T){
 	if value != 3 {
 		t.Error("GetFirst should return 3")
 	}
-	if l.Length() != 2 {
+	if l.Size() != 2 {
 		t.Error("LinkedList length should be 2")
 	}
 }
@@ -124,7 +124,7 @@ func TestRemoveLast(t *testing.T){
 	if value != 2 {
 		t.Errorf("GetLast should return 2 but returned %d",value)
 	}
-	if l.Length() != 2 {
+	if l.Size() != 2 {
 		t.Error("LinkedList length should be 2")
 	}
 }
@@ -153,7 +153,7 @@ func TestRemove(t *testing.T){
 	if value != 2 {
 		t.Errorf("Get(1) should return 2 but returned %d",value)
 	}
-	if l.Length() != 3 {
+	if l.Size() != 3 {
 		t.Error("LinkedList length should be 3")
 	}
 }
@@ -178,7 +178,7 @@ func TestAdd(t *testing.T){
 	if value != 99 {
 		t.Errorf("Get(1) should be 99 but returned %d",value)
 	}
-	if l.Length() != 4 {
+	if l.Size() != 4 {
 		t.Error("LinkedList length should be 4")
 	}
 }
