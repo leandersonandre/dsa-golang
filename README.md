@@ -17,6 +17,8 @@ Data Structures and Algorithms in Go
 
 - [x] NodeStack implementation
 
+- [ ] ArrayStack implementation
+
 3. Queue
 3. Map
 
@@ -57,7 +59,7 @@ go test ./...
 
 ## Stack
 
-Stack use LIFO (last-in first-out) ordering
+Stack use LIFO (last-in first-out) ordering.
 
 | **Method** | **Complexity** |
 |------------|----------------|
@@ -68,3 +70,14 @@ Stack use LIFO (last-in first-out) ordering
 | IsEmpty() : bool  | O(1)           |
 
 ## Queue
+
+
+Queue use FIFO (first-in first-out) ordering.
+
+| **Method** | **Complexity** |
+|------------|----------------|
+| Add(value)     | O(1)           |
+| Peek() int   | O(1)           |
+| Remove() int   | O(1)           |
+| Size() : int | O(1)           |
+| IsEmpty() : bool  | O(1)           |
