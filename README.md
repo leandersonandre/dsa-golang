@@ -14,6 +14,9 @@ Data Structures and Algorithms in Go
 - [ ] Circular LinkedList
 
 3. Stack
+
+- [x] NodeStack implementation
+
 3. Queue
 3. Map
 
@@ -53,6 +56,8 @@ go test ./...
 | IsEmpty() : bool  | O(1)           |
 
 ## Stack
+
+Stack use LIFO (last-in first-out) ordering
 
 | **Method** | **Complexity** |
 |------------|----------------|
