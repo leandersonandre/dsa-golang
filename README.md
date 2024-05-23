@@ -19,14 +19,25 @@ Data Structures and Algorithms in Go
 
 - [ ] ArrayStack implementation
 
-3. Queue
+4. Queue
 
 
 - [x] Node Queue implementation
 
-3. Map
+- [ ] Deque - Double ended queue
 
-`
+6. Binary Heap
+
+
+10. Sorting algorithms
+
+- [ ] BubleSort
+
+- [ ] MergeSort
+
+- [ ] QuickSort
+
+
 ```
 go run .
 go test ./...
