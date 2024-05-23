@@ -24,7 +24,7 @@ Data Structures and Algorithms in Go
 
 - [x] Node Queue implementation
 
-- [ ] Deque - Double ended queue
+- [x] Deque - Double ended queue
 
 6. Binary Heap
 
@@ -96,3 +96,19 @@ Queue use FIFO (first-in first-out) ordering.
 | Remove() int   | O(1)           |
 | Size() : int | O(1)           |
 | IsEmpty() : bool  | O(1)           |
+
+Deque is a queue which elements can be added to or removed from either the front (head) or back (tail).
+
+
+| **Method** | **Complexity** |
+|------------|----------------|
+| AddFirst(value)     | O(1)           |
+| GetFirst() int   | O(1)           |
+| RemoveFirst() int   | O(1)           |
+| AddLast(value)     | O(1)           |
+| GetLast() int   | O(1)           |
+| RemoveLast() int   | O(1)           |
+| Size() : int | O(1)           |
+| IsEmpty() : bool  | O(1)           |
+
+
